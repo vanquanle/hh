@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+    padding: 0 15px; /* Thêm padding để tạo khoảng cách giữa nội dung và viền */
+}
+
+h2 {
+    font-family: Sen, sans-serif; /* Thêm sans-serif để đảm bảo fallback */
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27;
+}
+
+.top p {
+    font-size: 1.8rem;
+    line-height: 1.67;
+    margin-top: 16px;
+    width: 458px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Thêm margin-bottom để tạo khoảng cách dưới phần hero */
+}
+
+.right {
+    display: flex;
+    gap: 18px;
+}
+
+.btn {
+    border-radius: 50%;
+    border: 1px solid #FFB900;
+    display: flex; /* Đảm bảo nội dung trong nút được căn chỉnh đúng */
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #FFB900;
+    background-color: transparent; /* Sửa lại từ none thành transparent */
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #FFB900;
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử item xuống hàng nếu không đủ không gian */
+    gap: 30px; /* Khoảng cách giữa các phần tử item */
+    margin-top: 55px;
+    background-color: #FFB900;
+    padding: 30px 0; /* Thêm padding để tránh các phần tử chạm vào biên */
+}
+.infor{
+    padding: 16px 22px 22px;
+}
+
+.item {
+    flex: 1  calc(33.333% - 30px); /* Đảm bảo ba phần tử có kích thước đồng đều với khoảng cách gap */
+    
+    background-color: white; /* Đặt màu nền cho phần tử item để nổi bật hơn trên nền vàng */
+    border-radius: 12px; /* Bo tròn góc cho phần tử item */
+    overflow: hidden; /* Đảm bảo các nội dung không bị tràn ra ngoài góc bo tròn */
+}
+
+.item .th {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của phần tử chứa */
+    border-radius: 12px 12px 0px 0px;
+    height: 278px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Cắt hình ảnh để phù hợp với kích thước */
+}
+
+.rating {
+    display: flex;
+    gap: 6px;
+}
+
+.tt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basic {
+    font-family: Poppins, sans-serif; /* Thêm sans-serif để đảm bảo fallback */
+    font-size: 1.8rem; /* Thay đổi từ px sang rem cho nhất quán */
+    font-weight: 600;
+    line-height: 1.67;
+    text-align: left;
+}
+
+.bottom .item .p {
+    font-size: 1.4rem;
+    line-height: 1.67;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 458px;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+   
+}
+
+.ft {
+    display: flex;
+    justify-content: space-between; /* Căn chỉnh các phần tử trong footer của item */
+    align-items: center; /* Căn giữa các phần tử dọc theo trục ngang */
+}
